@@ -1,0 +1,297 @@
+.html {
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  font-family: 'Amaranth', sans-serif;
+}
+
+.image {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  z-index: 99;
+  color: black;
+  border: #000 solid 2px;
+}
+
+.image h4 {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+  font-size: .5rem;
+  color: #fff;
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.image-top {
+  position: absolute;
+  width: 100%;
+  height: 1.5rem;
+  top: 0px;
+  left: 0;
+}
+
+.image:hover h4 {
+  z-index: 999;
+  opacity: 1;
+}
+
+.after-image:hover {
+  opacity: 1;
+}
+
+.after-image-column:hover {
+  opacity: 1;
+}
+
+.thanos {
+  background-color: purple;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQmQyZXQdAiknVbBOurMCsciIF7vo559S3sC4Fp8ve_RvCqKwDd);
+  grid-area: thanos;
+}
+
+.th {
+  background: rgb(109, 54, 120);
+  background: radial-gradient(circle, rgba(109, 54, 120, 1) 0%, rgba(26, 67, 212, 1) 100%);
+}
+
+.ms-marvel {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 59%;
+  clip-path: polygon(0 0%, 100% 0%, 100% 70%, 0% 100%);
+  background-image: url(https://i.pinimg.com/originals/5d/50/c3/5d50c3273efb783940a8dea3fa2e14b4.jpg);
+  grid-area: ms-marvel;
+}
+
+.mm {
+  color: #ffffff;
+  background: rgb(204, 66, 36);
+  background: linear-gradient(90deg, rgba(204, 66, 36, 1) 0%, rgba(243, 212, 3, 1) 46%, rgba(42, 117, 179, 1) 100%);
+}
+
+.black-panter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 62%;
+  background-color: rgba(42, 13, 53, 0.795);
+  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+  background-position: left;
+  grid-area: black-panter;
+  background-image: url(https://abdju.com/wp-content/uploads/2016/11/black-panther-1-1080x675.jpg);
+}
+
+.bp {
+  background: rgb(196, 168, 255);
+  background: linear-gradient(90deg, rgba(196, 168, 255, 1) 0%, rgba(102, 78, 174, 1) 46%, rgba(26, 5, 84, 1) 100%);
+}
+
+.venom {
+  background-color: black;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQmiDI_fjTAb_6TICseZ3EFOA1ipFBWxGlZwOvB8GOyNbuJ-Qu3);
+  grid-area: venom;
+}
+
+.vn {
+  background-color: black;
+}
+
+.iron-man {
+  background-color: goldenrod;
+  background-image: url(https://images6.alphacoders.com/996/996543.jpg);
+  grid-area: iron-man;
+}
+
+.im {
+  background: rgb(170, 5, 5);
+  background: radial-gradient(circle, rgba(170, 5, 5, 1) 0%, rgba(251, 202, 3, 1) 100%);
+}
+
+.spiderman {
+  background-color: red;
+  background-image: url(https://images7.alphacoders.com/104/thumb-1920-1043974.jpg);
+  grid-area: spiderman;
+}
+
+.sp {
+  background: rgb(167, 24, 20);
+  background: linear-gradient(90deg, rgba(167, 24, 20, 1) 0%, rgba(10, 43, 78, 1) 100%);
+}
+
+.black-widow {
+  background-color: rgba(240, 91, 22, 0.781);
+  background-image: url(https://vistapointe.net/images/anna-mercury-1.jpg);
+  grid-area: black-widow;
+}
+
+.bw {
+  background: rgb(100, 89, 87);
+  background: radial-gradient(circle, rgba(100, 89, 87, 1) 0%, rgba(122, 31, 30, 1) 100%);
+}
+
+.start-lord {
+  background-position: top;
+  background-image: url(https://www.elsetge.cat/myimg/f/97-979555_wallpaper-star-lord-marvel-superhero-artwork-4k-8k.jpg);
+  grid-area: start-lord;
+  overflow: hidden;
+}
+
+.sl {
+  color: #000;
+  background: rgb(210, 46, 87);
+  background: linear-gradient(90deg, rgba(210, 46, 87, 1) 0%, rgba(169, 16, 70, 1) 46%, rgba(246, 31, 86, 1) 100%);
+}
+
+.thor {
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 52%;
+  background-image: url(https://3.bp.blogspot.com/-rdKBrWsMNhA/XWDgwW_no7I/AAAAAAAALpQ/2StVJoP7CaopMoE1Xl0l1Luuh-Q6aWHsACLcBGAs/w914-h514-p-k-no-nu/jane-foster-thor-marvel-comics-uhdpaper.com-4K-4.229-wp.thumbnail.jpg);
+  grid-area: thor;
+}
+
+.th {
+  background: rgb(204, 14, 29);
+  background: radial-gradient(circle, rgba(204, 14, 29, 1) 0%, rgba(64, 75, 86, 1) 100%);
+}
+
+.cap-america {
+  background-color: cyan;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 52%;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+  margin: 0;
+  background-image: url(https://papers.co/wallpaper/papers.co-au73-hero-captain-america-jeehyunglee-illustration-art-paint-6-wallpaper.jpg);
+  grid-area: cap-america;
+}
+
+.ca {
+  background: rgb(170, 20, 40);
+  background: radial-gradient(circle, rgba(170, 20, 40, 1) 0%, rgba(0, 0, 66, 1) 100%);
+}
+
+.ambos {
+  background-color: #fff;
+  position: relative;
+  grid-area: ambos;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.ambos-colum {
+  grid-area: ambos-colum;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+}
+
+.container-hero {
+  display: grid;
+  padding: .5rem;
+  border: #000 solid 1px;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 90%;
+  grid-template-rows: repeat(8, auto);
+  grid-template-columns: repeat(6, auto);
+  grid-gap: .8rem;
+  background-color: #fff;
+  grid-template-areas: "ambos-colum ambos-colum ambos-colum spiderman spiderman spiderman " "ambos-colum ambos-colum ambos-colum  spiderman spiderman spiderman " "ambos-colum ambos-colum ambos-colum  thanos thanos thanos " "ambos-colum ambos-colum ambos-colum  thanos thanos thanos " "venom venom venom start-lord start-lord start-lord" "venom venom venom start-lord start-lord start-lord" "iron-man iron-man iron-man ambos ambos  black-widow" "iron-man iron-man iron-man ambos ambos  black-widow";
+}
+
+.after-image {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all .2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.after-image-column {
+  position: absolute;
+  right: -130px;
+  opacity: 0;
+  height: 100%;
+  width: 350px;
+  transition: all .2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+@media screen and (min-width: 768px) {
+  .container-hero {
+    display: grid;
+    padding: 1rem;
+    border: #000 solid 1px;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 90%;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(7, auto);
+    grid-gap: .8rem;
+    background-color: #fff;
+    grid-template-areas: "ambos-colum ambos-colum ambos-colum start-lord spiderman spiderman spiderman " "ambos-colum ambos-colum ambos-colum start-lord spiderman spiderman spiderman " "ambos-colum ambos-colum ambos-colum start-lord thanos thanos thanos " "ambos-colum ambos-colum ambos-colum venom thanos thanos thanos " "iron-man iron-man iron-man ambos ambos ambos black-widow" "iron-man iron-man iron-man ambos ambos ambos black-widow";
+  }
+  .image h4 {
+    font-size: 1.2rem;
+    height: 2rem;
+  }
+  .start-lord {
+    background-position: left;
+  }
+  .cap-america {
+    width: 52%;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+  }
+  .thor {
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+    width: 52%;
+  }
+  footer a {
+    font-size: 2rem;
+  }
+}
+
+footer {
+  position: absolute;
+  color: gray;
+  top: 0;
+  left: 0;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+footer a {
+  color: gray;
+  text-decoration: none;
+}
